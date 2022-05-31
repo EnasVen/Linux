@@ -61,13 +61,19 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 - rm : 刪除所有資料的目錄(一般移除: rm -r myetc ; 強制移除: rm -rf m myetc) 
 - cat : 列出指定檔案內容(資料量大請勿使用)，例如: cat /etc/os-release (查作業系統版本)；cat /etc/lsb-release (查Linux standard base e.g.水母jammy) 
 - ls 
-  > -a : 包含.開頭的檔案
-  > -A : 不包含.開頭的檔案
-  > -d : 只列出資料夾
-  > -h : human readable
-  > -i : 每個檔案顯示標號
-  > -l : 結果以長形資料呈現(list)
-  > -R : 遞迴列出
+  > -a : 包含.開頭的檔案  
+  > -A : 不包含.開頭的檔案  
+  > -d : 只列出資料夾  
+  > -h : human readable  
+  > -i : 每個檔案顯示標號  
+  > -l : 結果以長形資料呈現(list)  
+  > -R : 遞迴列出  
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
+# Redirection & Pipe
+使用 > 將結果儲存到某個檔案，重複使用會overwrite原檔案；如果要不覆蓋原檔，需要用 >> 符號，例如: ls /usr > output.txt 或者 history > tmpCommands.txt
+使用 | 將結果丟入下一個運算式，例如: dpkg -l | grep '^python'
 
+# Data Manipulation
+除了上面的cat，常用的操作指令還有:
+ - 
