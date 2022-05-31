@@ -40,3 +40,18 @@ FHS為File Hierarchy Standard的縮寫，規範每個檔案應該存放的位置
   - 主機ip : 虛擬機ip
   - 使用者名稱 : ubuntu
   - port : 22
+
+# Debian Package
+Debian套件名稱由3部分組成: 套件名稱、版本編號、核心型號 : 主版本.次版本.修補-套件release
+套件的下載位置稱為倉庫，在系統的位置是:  
+1. /etc/apt/sources.list
+2. /etc/apt/sources.list.d/*.list
+
+apt 為新版輕量級的套件管理指令，傳統套件管理指令為 apt-get , apt-cache , ...   
+更新套件清單 : apt udate  
+套件升級 : apt upgrade  
+列出已安裝套件 : dpkg -l  
+搜尋相關套件 : apt search 'python' ... 會連說明也搜尋
+搜尋相關套件 : apt search --names-only 'python' ... 只搜尋套件名稱
+套件移除 : apt purge xxx 
+相依性套件移除 : apt autoremove
