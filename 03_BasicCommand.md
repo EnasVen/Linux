@@ -40,6 +40,8 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 
 # 基本指令
 - id : 顯示使用資訊(較詳細)，uid=0代表管理員;uid=1000代表login帳號
+- uname -r : 查看核心版本
+- ls -l /etc/os-release : 查看Linux版本
 - whoami : 只顯示使用者名稱
 - date : 顯示時間日期
 - claer : 清空螢幕
@@ -54,12 +56,16 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 - ip addr show : 查看網路地址
 - lsof -nPi : 查看TCP/IP socket
 - df -h : 查看現有資源使用狀況
+- du : 顯示目錄大小，例如: du -sh /* 顯示跟目錄下所有目錄容量
 - pwd : 印出工作目錄
 - cp -r /etc . : copy 整個etc目錄到指定位置(copy目錄要用-r；copy檔案不用)
 - scp : secure copy，例如: scp user01@192.168.31.204:/home/user01/xxx.tar.gz
 - mv : 移動檔案或者重新命名檔案，例如: mv etc myetc
 - rm : 刪除所有資料的目錄(一般移除: rm -r myetc ; 強制移除: rm -rf m myetc) 
-- cat : 列出指定檔案內容(資料量大請勿使用)，例如: cat /etc/os-release (查作業系統版本)；cat /etc/lsb-release (查Linux standard base e.g.水母jammy) 
+- cat : 列出指定檔案內容(資料量大請勿使用)，例如: cat /etc/os-release (查作業系統版本)；cat /etc/lsb-release (查Linux standard base e.g.水母jammy) 3
+- which/whereis : 找出指令全路徑(which只找執行檔)
+- locate : 找出具備特定條件的檔名，例如: locate ABC
+- find : 尋找路徑下符合條件的所有檔案，例如: find -name xxx.txt -typr d/f/l (d為目錄；f為檔案；l為捷徑)
 - ls 
   > -a : 包含.開頭的檔案  
   > -A : 不包含.開頭的檔案  
@@ -68,6 +74,14 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
   > -i : 每個檔案顯示標號  
   > -l : 結果以長形資料呈現(list)  
   > -R : 遞迴列出  
+- grep
+  > -n : 顯示行號
+  > -i : 不分大小寫去搜尋
+  > -v : 反向搜尋，不包含的全部顯示
+  > -E : 判讀regexp
+  > 判斷 windows換行 : grep -m | $'\r'
+
+
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
 # Redirection & Pipe
@@ -76,4 +90,16 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 
 # Data Manipulation
 除了上面的cat，常用的操作指令還有:
- - 
+ - less : 檢視一部分的資料，用於當原始資料很多的時候，不能使用cat
+ - head : 查看前幾筆資料，例如: head -1 xxx.csv | tr ';' '\n' | wc -l
+ - tail : 查看後幾筆資料
+ - wc : 看資料的domension，例如: wc -l/-w/-c計算# word rows/words/bytes
+ - cut : 切資料，例如: head -1 xxx.csv | cut -d ';' '' -f 1 , 3-4 , 7-27
+
+# 壓縮與解壓縮
+以下指令可以獲得並處理壓縮檔:
+  - wget : 從指定網址下載source code、tgz壓縮檔、package...etc
+  - tar -tvf xxx.tar.gz : 查看 xxx 壓縮檔的內容
+  - tar -xvf xxx.tar.gz : 解壓縮 xxx 壓縮檔
+  - unzip -l xxx.zip : 查看 xxx 壓縮檔的內容
+  - unzip xxx.zip : 解壓縮zip檔
