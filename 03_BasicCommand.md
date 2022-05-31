@@ -29,7 +29,7 @@ Linux語法格式: command **[-options]** **[arguments]**
 7. q : 結束
 
 # 基本指令
-- id : 顯示使用資訊(較詳細)
+- id : 顯示使用資訊(較詳細)，uid=0代表管理員;uid=1000代表login帳號
 - whoami : 只顯示使用者名稱
 - date : 顯示時間日期
 - claer : 清空螢幕
@@ -40,3 +40,6 @@ Linux語法格式: command **[-options]** **[arguments]**
 - poweroff : 等價於shutdown now，立刻關機
 - shutdown -r : 1分鐘後重新開機
 - reboot : 等價於shutdown now，立刻關機
+
+2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
+
