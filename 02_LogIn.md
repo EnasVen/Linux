@@ -10,3 +10,10 @@
 
 # 安裝openssh服務
 切管理員後輸入 apt install openssh-server
+ssh為網路加密協定，可用於連接:
+Linux <=> Linux ... 使用OpenSSH
+Linux <=> 家裡電腦 ... Putty
+
+port number 22 : SSH server
+port number 80 : HTTP server
+port number 443 : HTTPS server
