@@ -62,6 +62,7 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 - scp : secure copy，例如: scp user01@192.168.31.204:/home/user01/xxx.tar.gz
 - mv : 移動檔案或者重新命名檔案，例如: mv etc myetc
 - rm : 刪除所有資料的目錄(一般移除: rm -r myetc ; 強制移除: rm -rf m myetc) 
+- mkdir/rmdir : 建立/移除空資料夾
 - cat : 列出指定檔案內容(資料量大請勿使用)，例如: cat /etc/os-release (查作業系統版本)；cat /etc/lsb-release (查Linux standard base e.g.水母jammy) 3
 - which/whereis : 找出指令全路徑(which只找執行檔)
 - locate : 找出具備特定條件的檔名，例如: locate ABC
@@ -75,12 +76,11 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
   > -l : 結果以長形資料呈現(list)  
   > -R : 遞迴列出  
 - grep
-  > -n : 顯示行號
-  > -i : 不分大小寫去搜尋
-  > -v : 反向搜尋，不包含的全部顯示
-  > -E : 判讀regexp
-  > 判斷 windows換行 : grep -m | $'\r'
-
+  > -n : 顯示行號  
+  > -i : 不分大小寫去搜尋  
+  > -v : 反向搜尋，不包含的全部顯示  
+  > -E : 判讀regexp  
+  > 判斷 windows換行 : grep -m | $'\r'  
 
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
