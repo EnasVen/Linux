@@ -56,9 +56,18 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 - df -h : 查看現有資源使用狀況
 - pwd : 印出工作目錄
 - cp -r /etc . : copy 整個etc目錄到指定位置(copy目錄要用-r；copy檔案不用)
+- scp : secure copy，例如: scp user01@192.168.31.204:/home/user01/xxx.tar.gz
 - mv : 移動檔案或者重新命名檔案，例如: mv etc myetc
 - rm : 刪除所有資料的目錄(一般移除: rm -r myetc ; 強制移除: rm -rf m myetc) 
-
+- cat : 列出指定檔案內容(資料量大請勿使用)，例如: cat /etc/os-release (查作業系統版本)；cat /etc/lsb-release (查Linux standard base e.g.水母jammy) 
+- ls 
+  > -a : 包含.開頭的檔案
+  > -A : 不包含.開頭的檔案
+  > -d : 只列出資料夾
+  > -h : human readable
+  > -i : 每個檔案顯示標號
+  > -l : 結果以長形資料呈現(list)
+  > -R : 遞迴列出
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
 
