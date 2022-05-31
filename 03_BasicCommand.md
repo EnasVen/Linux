@@ -1,12 +1,22 @@
 # Format
 Linux語法格式: command **[-options]** **[arguments]**  
+options參數 目的為改變指令執行的方式
+  -   Unix style : 單一dash字元，例如: ls -l /usr
+  -   GNU style : 雙dash字元，例如: df --human-readable
+  -   BSD style : 空格字元，例如: ps a (注意和ps -a不同)
+  -   特殊 style : 例如: find / -name 'p*'
+
 第一提示字元(Primary Prompt):  
   - #代表系統管理員(root)
   - $代表一般使用者
 第二提示字元(Secondary Prompt):
   - > 符號代表指令還沒打完
 
+arguments參數 目的為改變指令處理的對象
+  - ls -l /temp : 查看temp目錄的內容
+
 ; 代表statement的結束，用來在同一列內使用不同指令
+Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；紅色為壓縮檔
 
 # Linux Manual(操作手冊)
 輸入指令man可以查看各類指令用途與細節，左上角的數字為手冊分類:  
