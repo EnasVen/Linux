@@ -135,6 +135,6 @@ lsof -nPi : 查詢網路服務
 2. Desktop : networkd
 
 # 變更主機名稱
-到 /etc/cloud/cloud.cfg nano這個檔案，找到preserve_hostname改為 true/false
-hostname -i : show ip
-hostname -f : show "正規fgdn"主機名稱
+到 /etc/cloud/cloud.cfg nano這個檔案，找到preserve_hostname改為 true/false  
+hostname -i : show ip  
+hostname -f : show "正規fgdn"主機名稱  
