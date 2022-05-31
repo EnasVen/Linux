@@ -103,6 +103,9 @@ e.g. cp -r /etc > dev/null (直接丟掉不顯示在terminal的方法)
  - 萬用字元 : *(符合所有字元) 與 ?(符合單一字元)
  - touch : touch file0{1,2,3} 將產生 file01 , file02 , file03 的空檔案 ...Brace Expansion
 
+指令文書處理器(stream editor)
+  - sed : sed 's/\r/ /g' test.txt ... (將\r取代成空白)
+
 # 壓縮與解壓縮
 以下指令可以獲得並處理壓縮檔:
   - wget : 從指定網址下載source code、tgz壓縮檔、package...etc
