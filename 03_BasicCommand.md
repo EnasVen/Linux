@@ -87,8 +87,10 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
 # Redirection & Pipe
-使用 > 將結果儲存到某個檔案，重複使用會overwrite原檔案；如果要不覆蓋原檔，需要用 >> 符號，例如: ls /usr > output.txt 或者 history > tmpCommands.txt
-使用 | 將結果丟入下一個運算式，例如: dpkg -l | grep '^python'
+使用 > 將結果儲存到某個檔案，重複使用會overwrite原檔案；如果要不覆蓋原檔，需要用 >> 符號，例如: ls /usr > output.txt 或者 history > tmpCommands.txt  
+使用 | 將結果丟入下一個運算式，例如: dpkg -l | grep '^python'  
+e.g. cp -r /etc/xxx > err.txt (把error message丟到txt)
+e.g. cp -r /etc > dev/null (直接丟掉不顯示在terminal的方法)
 
 # Data Manipulation
 除了上面的cat，常用的操作指令還有:
