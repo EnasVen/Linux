@@ -99,6 +99,9 @@ e.g. cp -r /etc > dev/null (直接丟掉不顯示在terminal的方法)
  - tail : 查看後幾筆資料
  - wc : 看資料的domension，例如: wc -l/-w/-c計算# word rows/words/bytes
  - cut : 切資料，例如: head -1 xxx.csv | cut -d ';' '' -f 1 , 3-4 , 7-27
+ - tr : 取代，例如: tr ';' '-'
+ - 萬用字元 : *(符合所有字元) 與 ?(符合單一字元)
+ - touch : touch file0{1,2,3} 將產生 file01 , file02 , file03 的空檔案 ...Brace Expansion
 
 # 壓縮與解壓縮
 以下指令可以獲得並處理壓縮檔:
