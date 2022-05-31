@@ -30,3 +30,13 @@ FHS為File Hierarchy Standard的縮寫，規範每個檔案應該存放的位置
 > Debian : ext2,3,4 (有lost + found 目錄)  
 > Docker : overlay2  
 
+# 資料傳輸
+下列兩種方法可以將資料上傳到Ubuntu:
+1. 由windows上傳
+  - step1 : 打開cmd
+  - step2 : 到putty路徑
+  - step3 : C:\Users\...\putty.exe pscp C:\shared\AIEN18\Data\xxx.tgz ubuntu@ip位置:/home/ubuntu
+2. 由FileZilla上傳(安裝openssh套件後，只要有sftp服務就能用FileZilla!)
+  - 主機ip : 虛擬機ip
+  - 使用者名稱 : ubuntu
+  - port : 22
