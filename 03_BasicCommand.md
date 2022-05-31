@@ -50,6 +50,10 @@ Linux內，綠色為執行檔；藍色為可執行捷徑；深藍色為目錄；
 - poweroff : 等價於shutdown now，立刻關機
 - shutdown -r : 1分鐘後重新開機
 - reboot : 等價於shutdown now，立刻關機
+- ip route list : 查看所有ip
+- ip addr show : 查看網路地址
+- lsof -nPi : 查看TCP/IP socket
+- df -h : 查看現有資源使用狀況
 
 2014年以後發表的Linux大多使用systemd風格開機且只有login帳號能切管理員
 
