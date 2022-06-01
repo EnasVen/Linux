@@ -126,6 +126,12 @@ ip link show : 可看到所有網卡
 ip route list :
 lsof -nPi : 查詢網路服務
 
+socket = ip+port_number
+80/tcp : HTTP
+443/tcp: HTTPS
+21/tcp : FTP
+22/tcp : SSH
+
 網路設定檔位置:
 1. server : /etc/netplan/50-cloud-init.yaml
 2. Desktop : /etc/netplan/01-network-manager-all.yaml
