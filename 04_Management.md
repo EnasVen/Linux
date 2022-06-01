@@ -105,7 +105,7 @@ cat /etc/passwd : 放置所有帳號資訊的地方
 cat /etc/shadow : 密碼放置的地方  
 
 加入使用者到群組內: 
-  - adduse hadoop
+  - adduser hadoop
   - usermod -G G1,G2,G3 peter : 把peter加到G1,G2,G3群組內
   - groups 使用者 : 顯示使用者屬於哪些群組
 
