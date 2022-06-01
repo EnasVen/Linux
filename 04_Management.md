@@ -100,9 +100,9 @@ chown 帳號:群組 資料
 e.g. chown -R  hadoop:ABC hadoop-3.1.0/  => 一次性變更目錄內所有檔案的擁有者  
 
 gpasswd 可新增使用者到特定群組，例如: gpasswd -a ubuntu docker  
-passwd 帳號名稱 : 可變更該帳號密碼
-cat /etc/passwd : 放置所有帳號資訊的地方
-cat /etc/shadow : 密碼放置的地方
+passwd 帳號名稱 : 可變更該帳號密碼  
+cat /etc/passwd : 放置所有帳號資訊的地方  
+cat /etc/shadow : 密碼放置的地方  
 
 加入使用者到群組內: 
   - adduse hadoop
