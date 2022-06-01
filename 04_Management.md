@@ -2,11 +2,11 @@
 FHS為File Hierarchy Standard的縮寫，規範每個檔案應該存放的位置，了解這個檔案架構就能理解目錄的意義。  
 依照FHS標準，指令存放位置分類如下:
 1. **系統開機用**
+  - /bin , /sbin
+2. **系統正常運作用**
   - /usr/bin , /usr/sbin
-2. **自行編譯程式**
-  - /usr/local/bin , /usr/local/sbin
-3. **3rd Party Free軟體**
-  - /usr/local/軟體/bin , /usr/local/軟體/sbin 
+3. **自行編譯程式 or 3rd Party Free軟體**
+  - /usr/local/[軟體]/bin , /usr/local/[軟體]/sbin 
 4. **Vende相關軟體(廠商付費軟體/版權軟體)**
   - /opt/廠商名稱/軟體名稱/bin ,  /opt/廠商名稱/軟體名稱/sbin
 
