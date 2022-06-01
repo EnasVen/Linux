@@ -126,7 +126,7 @@ ip link show : 可看到所有網卡
 ip route list :
 lsof -nPi : 查詢網路服務
 
-socket = ip+port_number
+socket = ip+port_number (client-server架構)
 80/tcp : HTTP
 443/tcp: HTTPS
 21/tcp : FTP
