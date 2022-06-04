@@ -31,6 +31,8 @@ step13: 根據電腦機體好壞決定設定值，這邊以我的MSI GL75筆電�
   - Display內必須勾選3D加速
   - Graphic欄位就是獨顯配置區，這裡的容量一半透過硬體支付；另一半則透過虛擬機，所以上面Memory配置的時候要記得留一點給圖像處理，我這邊是設定4GB
   - CD/DVD SATA選擇掛載先前下載的desktop-amd64.iso檔案(啟動+完成設定後記得要選上面的Use physical drive完成退片(模擬灌光碟的情境))
+
+
 step14 : 啟動Ubuntu，開始安裝  
 step15 : 選擇Install Ubuntu  
 step16 : Keyboard Layout選擇 English - English(US)  
